@@ -1,28 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
-<title>Sorry Hania</title>
+<title>For Hania ❤️</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="container">
+<canvas id="stars"></canvas>
 
-<h1>Hania... I'm Sorry 💔</h1>
+<div class="intro">
 
-<p id="message"></p>
+<h1 id="title">Hania...</h1>
+
+<p id="text"></p>
+
+<button id="next">Continue</button>
+
+</div>
+
+<div class="final hidden">
+
+<h1>I'm Truly Sorry ❤️</h1>
+
+<p>
+I never meant to hurt you.  
+If I could go back in time, I would change every moment that made you sad.
+</p>
 
 <button onclick="forgive()">Forgive Me?</button>
 
 </div>
 
 <audio autoplay loop>
-<source src="music.mp3" type="audio/mpeg">
+<source src="music.mp3">
 </audio>
-
-<div class="hearts"></div>
 
 <script src="script.js"></script>
 
