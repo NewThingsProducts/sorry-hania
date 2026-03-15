@@ -1,41 +1,41 @@
 body{
 margin:0;
-font-family: 'Segoe UI';
-height:100vh;
-display:flex;
-align-items:center;
-justify-content:center;
-background:linear-gradient(135deg,#ff758c,#ff7eb3);
+font-family:Arial;
+background:black;
+color:white;
 overflow:hidden;
+text-align:center;
 }
 
-.container{
-background:rgba(255,255,255,0.15);
-backdrop-filter:blur(10px);
-padding:50px;
-border-radius:20px;
-text-align:center;
-color:white;
-box-shadow:0 20px 40px rgba(0,0,0,0.2);
+canvas{
+position:fixed;
+top:0;
+left:0;
+z-index:-1;
+}
+
+.intro{
+margin-top:20vh;
 }
 
 h1{
-font-size:40px;
+font-size:50px;
 }
 
 p{
-font-size:20px;
-min-height:80px;
+font-size:22px;
+max-width:600px;
+margin:auto;
 }
 
 button{
-margin-top:20px;
-padding:15px 30px;
+margin-top:30px;
+padding:15px 35px;
 font-size:18px;
 border:none;
-border-radius:30px;
-background:white;
-color:#ff4b6e;
+border-radius:40px;
+background:#ff3b6b;
+color:white;
 cursor:pointer;
 transition:0.3s;
 }
@@ -44,14 +44,18 @@ button:hover{
 transform:scale(1.1);
 }
 
-.heart{
-position:absolute;
-color:white;
-font-size:20px;
-animation:float 6s linear infinite;
+.hidden{
+display:none;
 }
 
-@keyframes float{
+.heart{
+position:absolute;
+color:#ff4d6d;
+font-size:25px;
+animation:rise 5s linear infinite;
+}
+
+@keyframes rise{
 0%{transform:translateY(0);}
 100%{transform:translateY(-100vh);}
 }
